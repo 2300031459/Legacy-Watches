@@ -4,7 +4,13 @@ A user-frendly interface enables better use for exploring new collection of watc
 
 ## Table of contents
 
-- [Install Resources](#Extensions- Html, css, js, liveserver, typesave)
+- [Install Resources](#installation)
+- [Set Up](#setup)
+
+## Install Resources
+
+- Install VsCode new version for better experience and intall all necessary extensions.
+      - Extensions :- Html Preview, Html Boilerplate, Css Snippets, Js(ES6), 
 
 ## Set Up
 
