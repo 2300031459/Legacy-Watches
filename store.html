@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <title>Watch Store</title>
+    <link rel="stylesheet" href="store.css">
+</head>
+<body>
+
+    <div class="like"  onclick="toggleLike()">
+      <svg xmlns="http://www.w3.org/2000/svg"
+      height="24px"
+      viewBox="0 -960 960 960"
+      width="24px"
+      fill="black"
+      data-liked="false"><path d="m480-120-58-52q-101-91-167-157T150-447.5Q111-500 95.5-544T80-634q0-94 63-157t157-63q52 0 99 22t81 62q34-40 81-62t99-22q94 0 157 63t63 157q0 46-15.5 90T810-447.5Q771-395 705-329T538-172l-58 52Zm0-108q96-86 158-147.5t98-107q36-45.5 50-81t14-70.5q0-60-40-100t-100-40q-47 0-87 26.5T518-680h-76q-15-41-55-67.5T300-774q-60 0-100 40t-40 100q0 35 14 70.5t50 81q36 45.5 98 107T480-228Zm0-273Z"/></svg>
+
+    </div>
+
+    <div class="save" onclick="toggleSave()">
+      <svg  xmlns="http://www.w3.org/2000/svg"
+      height="24px"
+      viewBox="0 -960 960 960"
+      width="24px"
+      fill="#000000"
+      data-saved="false"><path d="M200-120v-640q0-33 23.5-56.5T280-840h400q33 0 56.5 23.5T760-760v640L480-240 200-120Zm80-122 200-86 200 86v-518H280v518Zm0-518h400-400Z"/></svg>
+    </div>
+    <h1 id="heading">Legacy</h1>
+    <div class="iconsvg">
+        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="undefined"><path d="M661.67-131.87q-68.56 0-117.39-48.83-48.82-48.82-48.82-117.39 0-68.87 48.82-117.66 48.83-48.79 117.39-48.79 68.87 0 117.67 48.79 48.79 48.79 48.79 117.66 0 22.87-5.75 43.25t-16.29 38.27l91.41 90.9q6.72 5.95 10.08 14.38 3.35 8.42 3.35 17.41t-3.35 16.95q-3.36 7.95-10.32 14.91-5.96 5.95-14.38 9.31-8.43 3.36-17.41 3.36-8.99 0-17.07-3.36-8.07-3.36-14.79-9.31l-91.65-90.65q-18 10.28-38.27 15.54-20.27 5.26-42.02 5.26Zm-443.73.24q-68.72 0-117.52-48.83-48.79-48.82-48.79-117.39 0-68.76 48.83-117.73 48.82-48.96 117.39-48.96 68.76 0 117.73 48.94 48.96 48.94 48.96 117.66T335.6-180.42q-48.94 48.79-117.66 48.79Zm-.09-90.76q31.32 0 53.63-22.17 22.3-22.16 22.3-53.29 0-31.32-22.3-53.63-22.31-22.3-53.63-22.3-31.33 0-53.39 22.3-22.07 22.31-22.07 53.63 0 31.13 22.07 53.29 22.06 22.17 53.39 22.17Zm443.58 0q31.33 0 53.63-22.17 22.31-22.16 22.31-53.29 0-31.32-22.31-53.63-22.3-22.3-53.63-22.3-31.32 0-53.39 22.3-22.06 22.31-22.06 53.63 0 31.13 22.06 53.29 22.07 22.17 53.39 22.17ZM217.94-575.22q-68.72 0-117.52-48.82-48.79-48.83-48.79-117.39 0-68.77 48.83-117.73 48.82-48.97 117.39-48.97 68.76 0 117.73 48.94 48.96 48.94 48.96 117.66 0 68.73-48.94 117.52-48.94 48.79-117.66 48.79Zm443.59 0q-68.73 0-117.52-48.82-48.79-48.83-48.79-117.39 0-68.77 48.82-117.73 48.83-48.97 117.39-48.97 68.77 0 117.73 48.94 48.97 48.94 48.97 117.66 0 68.73-48.94 117.52-48.94 48.79-117.66 48.79Zm-443.68-90.76q31.32 0 53.63-22.16 22.3-22.17 22.3-53.29 0-31.33-22.3-53.63-22.31-22.31-53.63-22.31-31.33 0-53.39 22.31-22.07 22.3-22.07 53.63 0 31.12 22.07 53.29 22.06 22.16 53.39 22.16Zm443.58 0q31.33 0 53.63-22.16 22.31-22.17 22.31-53.29 0-31.33-22.31-53.63-22.3-22.31-53.63-22.31-31.32 0-53.39 22.31-22.06 22.3-22.06 53.63 0 31.12 22.06 53.29 22.07 22.16 53.39 22.16ZM218.09-298.09Zm0-443.58Zm443.58 0Z"/></svg>
+    </div>
+
+    <ul class="menu-list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#">Watches</a></li>
+        <li><a href="#">About us</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+
+      <div class="profile">
+        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="undefined"><path d="M480-484.07q-69.59 0-118.86-49.27-49.27-49.27-49.27-118.86 0-69.58 49.27-118.74 49.27-49.15 118.86-49.15t118.86 49.15q49.27 49.16 49.27 118.74 0 69.59-49.27 118.86-49.27 49.27-118.86 49.27ZM151.87-238.8v-29.61q0-36.23 18.74-66.59 18.74-30.37 49.8-46.35 62.72-31.24 127.67-46.98 64.94-15.74 131.92-15.74 67.43 0 132.39 15.62 64.96 15.62 127.2 46.86 31.06 15.95 49.8 46.25t18.74 66.93v29.61q0 37.78-26.61 64.39t-64.39 26.61H242.87q-37.78 0-64.39-26.61t-26.61-64.39Zm91 0h474.26v-28.42q0-10.77-5.5-19.58-5.5-8.81-14.5-13.7-52.56-26.04-106.85-39.3Q536-353.07 480-353.07q-55.52 0-110.28 13.27-54.76 13.26-106.85 39.3-9 4.89-14.5 13.7-5.5 8.81-5.5 19.58v28.42Zm237.12-336.27q31.81 0 54.48-22.65 22.66-22.65 22.66-54.47 0-31.81-22.65-54.35-22.66-22.55-54.47-22.55t-54.48 22.59q-22.66 22.59-22.66 54.3 0 31.82 22.65 54.48 22.66 22.65 54.47 22.65Zm.01-77.13Zm0 413.4Z"/></svg>
+      </div>
+
+      <div class="cart">
+        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="undefined"><path d="M202.87-71.87q-37.78 0-64.39-26.61t-26.61-64.39v-472.11q0-37.78 26.61-64.39t64.39-26.61h73.54q0-84.67 59.46-144.13 59.46-59.46 144.13-59.46 84.67 0 144.13 59.46 59.46 59.46 59.46 144.13h73.54q37.78 0 64.39 26.61t26.61 64.39v472.11q0 37.78-26.61 64.39t-64.39 26.61H202.87Zm0-91h554.26v-472.11H202.87v472.11Zm164.54-563.11h225.18q0-47.13-32.73-79.86T480-838.57q-47.13 0-79.86 32.73t-32.73 79.86ZM202.87-162.87v-472.11 472.11Zm276.37-228.52q75.43 0 136.03-48.52 60.6-48.52 59.84-109.52 0-19.4-12.35-32.47-12.35-13.08-31.43-13.08-15.2 0-26.68 8.88t-18.63 27.36q-11.72 34.65-41.68 55.5-29.97 20.85-65.1 20.85-35.13 0-65.48-20.73t-41.3-55.38q-7.16-19.48-18-27.98t-26.03-8.5q-19.15 0-31.6 13.08-12.46 13.07-12.46 32.23 0 61 59.72 109.64 59.71 48.64 135.15 48.64Z"/></svg>
+      </div>
+
+      <p id="face">Facebook</p>
+      <p id="insta">instagram</p>
+      <p id="twitter">Twitter</p>
+
+      <h2 class="product-head">Fossil India</h2>
+      <h2 class="price">$ 1120</h2>
+      <p class="discri">Incorporating elements from <br>
+        mid-century architecture, this <br> chronograph features a well-balanced <br>
+         construction, decorated with a minimal <br> dial and sculpted case
+        </p>
+
+        <button class="purchase"> <a href="payment.html">Purchase</a></button>
+        <button class="details">View Details</button>
+        <button class="right-arrow">
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="undefined"><path d="M504-480 320-664l56-56 240 240-240 240-56-56 184-184Z"/></svg>
+            <path d="M504-480 320-664l56-56 240 240-240 240-56-56 184-184Z"/>
+          </button>
+        <button class="left-arrow">
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="undefined"><path d="m439.65-480 152.18 152.17Q604.5-315.15 604.5-296t-12.67 31.83Q579.15-251.5 560-251.5t-31.83-12.67L344.41-447.93q-6.71-6.72-9.81-14.92-3.1-8.19-3.1-17.15 0-8.96 3.1-17.15 3.1-8.2 9.81-14.92l183.76-183.76Q540.85-708.5 560-708.5t31.83 12.67Q604.5-683.15 604.5-664t-12.67 31.83L439.65-480Z"/></svg>
+        </button>
+
+        <hr class="btw-line">
+        <div class="line"></div>
+        <hr class="right-line-long">
+
+
+        <img src="second-images/store.png" alt="Store Image" class="storeimage">
+        <img src="second-images/storeimg1.png" alt="Next1" class="next1">
+
+        <img src="second-images/store1.jpg" alt="Store1" class="store1">
+        <img src="second-images/storeimg1-1.jpg" alt="Store Image 1-1" class="store1-1" style="display: none;">
+
+        <img src="second-images/store2.jpg" alt="Store2" class="store2">
+        <img src="second-images/storeimg1-2.jpg" alt="Store Image 1-2" class="store1-2" style="display: none;">
+
+        <img src="second-images/store3.jpg" alt="Store3" class="store3">
+        <img src="second-images/storeimg1-3.jpg" alt="Store Image 1-3" class="store1-3" style="display: none;">
+
+        <img src="second-images/store4.jpg" alt="Store4" class="store4">
+        <img src="second-images/storeimg1-4.jpg" alt="Store Image 1-4" class="store1-4" style="display: none;">
+
+        <img src="second-images/storeimg2.png" alt="Next2" class="next2">
+        <hr class="nextline1">
+
+        <hr class="nextline2">
+
+        <img src="second-images/storeimg3.png" alt="Next3 " class="next3">
+
+        <hr class="nextline3">
+        <div class="circle"></div>
+        <hr class="navline">
+
+        <hr class="navline1">
+        <p class="lthr-detail">Leather</p>
+
+        <div class="circle1"></div>
+
+        <hr class="navline2">
+        <p class="steel-detial">Stainless Steel</p>
+
+        <script src="store.js"></script>
+</body>
+</html>

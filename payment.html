@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Watch Store</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Nova+Square&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="payment.css">
+</head>
+<body>
+    <div class="left-cont">
+        <h1 class="left-head">ORDER</h1>
+        <h2 class="prod-name">Fossil India</h2>
+        <p class="order-dis">Townsman Multifunction Brown Leather Watch</p>
+        <p class="price">$ 1,120</p>
+    </div>
+    <img src="second-images/store.png" alt="Product orderd" class="order-product">
+    <p class="item-cost">Item Cost</p>
+    <p class="co">$ 1120</p>
+    <p class="sub-cost">Sub Cost</p>
+    <p class="su-co">$ 10.8</p>
+    <p class="ship-cost">Shipping and package</p>
+    <p class="shi">$ 15.5</p>
+    <hr class="line">
+    <p class="total">Order Total</p>
+    <p class="or-cost">$ 1146.3</p>
+    <p class="more">Show More Items</p>
+
+    <div class="svg-contaier">
+        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="undefined" onclick="confirmCancel()"
+        style="cursor: pointer;"><path d="M504-480 320-664l56-56 240 240-240 240-56-56 184-184Z"/></svg>
+    </div>
+
+    <h3 class="right">Payment</h3>
+
+    <div class="master-card">
+        <img src="images/visa.png" alt="Visa">
+        <img src="images/chip.png" alt="Chip" class="plat">
+        <img src="images/circles.png" alt="Red and Yellow" class="twocir">
+    </div>
+
+    <p class="num" id="card-nummm">**** **** **** 0000</p>
+    <p class="val">VALID THRU</p>
+    <span class="exp-month-text">00</span> <span class="shhh"> / </span>
+    <span class="exp-year-text">00</span>
+    <p class="cardname" id="card-nameee">LILLY LUCUS</p>
+
+    <p class="fillname">CARD HOLDER</p>
+
+    <div class="input-container">
+        <input type="text" id="name" name="cardholder" required placeholder="Enter Card Holder Name">
+    </div>
+
+    <p class="cardholdnum">CARD NUMBER</p>
+
+    <div class="input-container-num">
+        <input type="text" id="card-number" name="cardnumber" placeholder="XXXX - XXXX - XXXX - XXXX" required>
+    </div>
+
+
+    <p class="expdate">EXPIRE DATE</p>
+
+    <div class="exp-number">
+        <input type="number" id="exp-month" placeholder="MM" data-maxlength="2" required />
+        <input type="number" id="exp-year" placeholder="YY" data-maxlength="2" required />
+    </div>
+
+    <p class="cvv">CVV</p>
+
+    <div class="cvv-cont">
+        <p class="slash"> / </p>
+        <input type="number" id="cvv" required maxlength="4" oninput="validateCVV(this)" />
+    </div>
+
+    <div class="toast">
+        <div class="toast-content">
+            <i class="fas fa-solid fa-check check"></i>
+
+            <div class="message">
+                <span class="text text-1">Success</span>
+                <span class="text text-2">Your Order Was Successfully Placed, Thank You!</span>
+            </div>
+        </div>
+       <i class="fa-solid fa-xmark close"></i>
+
+        <div class="progress"></div>
+    </div>
+
+
+    <button class="purchase">PURCHASE</button>
+
+    <label for="agree" class="checkbox-label" >
+        <input type="checkbox" id="agree" name="agree" required />
+        Save Card Information
+    </label>
+
+        <time id="time">03:00</time>
+        <span id="lefttime">time left!</span>
+
+    <script src="payment.js"></script>
+</body>
+</html>
